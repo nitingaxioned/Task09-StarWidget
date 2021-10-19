@@ -107,10 +107,16 @@ li {
   Header styling starts here
 =================================*/
 
+header .wrapper{
+  text-align: center;
+  background-color: #2b2e37;
+}
 
-
-
-
+header p{
+  color: #ffffff;
+  font-size: 30px;
+  padding: 10px 0;
+}
 
 /*=================================
   Header styling ends here
@@ -121,30 +127,41 @@ li {
 =================================*/
 
 
+.star-container{
+  display: flex;
+  justify-content: center;
+  margin: 20px auto;
+}
 
+.star{ 
+  text-indent: -999999999px;
+  position: relative;
+  margin: 13px;
+}
 
+.star::after{
+  content: "\f006";
+  color: #525252;
+  text-indent: 0;
+  font-size: 25px;
+  font-family: "fontAwesome";
+  position: absolute;
+  transform: translateX(-50%);
+  top: 0;
+  left: 0;
+}
 
+.star-color::after{
+  content: "\f005";
+  color: goldenrod;
+}
 
-
+.dummy{ display: none; }
+.star-count{ text-align: center; }
 
 /*=================================
   main styling ends here
 =================================*/
-
-/*=================================
-  footer styling starts here
-=================================*/ 
-
-
-
-
-
-
-
- /*=================================
-  footer styling ends here
-=================================*/ 
-
 /*media query starts*/
 /*media query for 995px starts here*/
 @media only screen and (max-width: 995px) {
