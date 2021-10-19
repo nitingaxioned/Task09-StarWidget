@@ -156,6 +156,7 @@ header p{
   color: goldenrod;
 }
 
+.dummy{ display: none; }
 .star-count{ text-align: center; }
 
 /*=================================
